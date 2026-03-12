@@ -1,0 +1,234 @@
+.sign {
+  display: block;
+  position: relative;
+  background: linear-gradient(90deg, #364574, #405189);
+}
+
+.sign__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.sign__form {
+  display: flex  ;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      max-width: 470px;
+      overflow: hidden;
+}
+
+
+
+.sign__logo {
+  margin-bottom: 40px;
+}
+
+.sign__logo a {
+  max-width: 100%;
+  width: auto;
+}
+
+.sign__logo img {
+  max-width: 250px;
+}
+
+.sign__input {
+  border: 1px solid #E6EAED;
+  height: 50px;
+  position: relative;
+  color: #000 !important;
+  font-size: 16px;
+  width: 100%;
+
+  padding: 0 20px;
+
+}
+
+.sign__input:hover,
+.sign__input:focus {
+  border-color:  rgba(255 ,255,255);
+}
+         
+
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.sign__input:active {}
+
+.sign__group {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.sign__group--checkbox {
+  width: 100%;
+  text-align: left;
+}
+
+.sign__group--checkbox input:not(:checked),
+.sign__group--checkbox input:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+.sign__group--checkbox input:not(:checked)+label,
+.sign__group--checkbox input:checked+label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  cursor: pointer;
+  padding-left: 34px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.sign__group--checkbox input:not(:checked)+label a,
+.sign__group--checkbox input:checked+label a {
+  /* background-image: -webkit-linear-gradient(0deg, #ff55a5 0%, #ff5860 100%); */
+  background-image: linear-gradient(to right,
+      #4c248b,
+      #6431a7,
+      #7e3ec4,
+      #994be1,
+      #b658ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ff5860;
+  opacity: 0.8;
+}
+
+.sign__group--checkbox input:not(:checked)+label a:hover,
+.sign__group--checkbox input:checked+label a:hover {
+  opacity: 1;
+}
+
+.sign__group--checkbox input:not(:checked)+label:before,
+.sign__group--checkbox input:checked+label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #2b2b31 !important;
+  border-radius: 2px;
+}
+
+.sign__group--checkbox input:not(:checked)+label:after,
+.sign__group--checkbox input:checked+label:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  transition: 0.4s;
+  /* background: url("../img/check.svg") no-repeat center; */
+  background-size: 20px auto;
+  border-radius: 2px;
+}
+
+.sign__group--checkbox input:not(:checked)+label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.sign__group--checkbox input:checked+label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.sign__group--checkbox label::-moz-selection {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sign__group--checkbox label::selection {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sign__btn {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(rgb(254, 180, 0) 0%, rgb(255, 0, 0) 100%);
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    border: none;
+    max-width: 130px;
+}
+
+.sign__btn:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.sign__text {
+
+  font-size: 16px;
+}
+
+.sign__text a {
+  position: relative;
+  /* background-image: -webkit-linear-gradient(0deg, #ff55a5 0%, #ff5860 100%); */
+  /* background-image: linear-gradient(
+    to right,
+    #4c248b,
+    #6431a7,
+    #7e3ec4,
+    #994be1,
+    #b658ff
+  ); */
+  color: #000;
+}
+
+.sign__text a:hover {
+  opacity: 1;
+}
+
+.sign-one-bg {
+  /* background-image: url(../component/Assets/images/section/section.jpg); */
+  background-image: url(../Component/assets/images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.sign-one-bg .bg-overlay {
+  /* background: linear-gradient(90deg, rgb(59, 59, 90), rgb(170, 143, 211)); */
+  background: linear-gradient(135deg, rgb(30 47 48 / 0%), rgb(51 84 86 / 30%));
+  opacity: 0.8;
+}
+
+.login_label {
+  color: #000;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+ 
+  .sign__logo {
+    margin-bottom: 50px;
+  }
+}

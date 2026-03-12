@@ -1,0 +1,18 @@
+.live-tv .default-selector-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.live-tv .default-selector {
+
+    transition: opacity 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 3px 6px;
+    padding: 8px;
+}
+
+.live-tv .default-selector input[type="radio"] {
+    cursor: pointer;
+}

@@ -1,0 +1,46 @@
+/* .MuiList-root{
+    background-color: #203235 !important;
+} */
+
+.program-list-container {
+    background: #203235;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.program-item {
+    border-bottom: 1px solid #404040;
+    transition: background-color 0.2s ease;
+}
+
+.program-item:last-child {
+    border-bottom: none;
+}
+
+.program-item.dragging {
+    background: #3a3a3a;
+}
+
+.program-drag-handle {
+    cursor: move;
+    padding: 8px;
+    color: #666;
+}
+
+.program-drag-handle:hover {
+    color: #fff;
+}
+
+.program-actions {
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.program-item:hover .program-actions {
+    opacity: 1;
+}
+
+.program-duration {
+    color: #2992ff;
+    font-size: 0.875rem;
+}
