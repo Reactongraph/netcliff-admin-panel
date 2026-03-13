@@ -29,7 +29,7 @@ import helpCenter from "../assets/images/HelpCenter.png";
 import purchaseHistory from "../assets/images/PurchaseHistory.png";
 import logOut from "../assets/images/logout.png";
 import Ticket from "../assets/images/Ticket.png";
-import analytics from "../assets/images/analytics.png";
+// import analytics from "../assets/images/analytics.png";
 import { projectName } from "../../util/config";
 
 const navStyle = {
@@ -149,13 +149,7 @@ const Sidebar = () => {
                     <span className="pl-2">Web Series</span>
                   </NavLink>
                 </li>
-                <li>
-                  {/* <NavLink to="/admin/analytics" style={navStyle}>
-                    <img src={analytics} width="25px" height="25px" />
-                    <span className="pl-2">Analytics</span>
-                  </NavLink> */}
-                </li>
-
+                
                 {/* <li>
                   <NavLink to="/admin/live_tv" style={navStyle}>
                     <img src={liveTv} width="25px" height="25px" />
@@ -231,6 +225,12 @@ const Sidebar = () => {
                     <span className="pl-2">Ad Banner</span>
                   </NavLink>
                 </li> */}
+                <li>
+                  <NavLink to="/admin/platform-analytics" style={navStyle}>
+                  <i className="ri-pie-chart-line" style={{ fontSize: "22px", color: "grey" }} />
+                  <span className="pl-2">Analytics</span>
+                  </NavLink>
+                </li>
 
                 <li>
                   <NavLink to="/admin/raisedTicket" style={navStyle}>
@@ -250,6 +250,7 @@ const Sidebar = () => {
                     <span className="pl-2">User Recommendations</span>
                   </NavLink>
                 </li>
+                
                 <li>
                   <NavLink to="/admin/landing-page/subscription-hero" style={navStyle}>
                     <img src={BannerImage} width="25px" height="25px" />

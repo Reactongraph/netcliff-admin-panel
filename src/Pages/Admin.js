@@ -51,6 +51,7 @@ import SubtitleForm from "../Component/Dialog/SubtitleForm";
 import AdBannerForm from "../Component/Dialog/AdBannerForm";
 import AdBanner from "../Component/Table/AdBanner";
 import Analytics from "../Component/Analytics/Analytics";
+import PlatformAnalytics from "../Component/Analytics/PlatformAnalytics";
 import Widget from "../Component/Table/Widget";
 import WidgetForm from "../Component/Dialog/WidgetForm";
 import WidgetSeriesManager from "../Component/Dialog/WidgetSeriesManager";
@@ -302,6 +303,11 @@ const Admin = () => {
               exact
               path={`${location.path}/adbanner/create`}
               component={AdBannerForm}
+            />
+            <Route
+              exact
+              path={`${location.path}/platform-analytics`}
+              component={PlatformAnalytics}
             />
             <Route
               exact
